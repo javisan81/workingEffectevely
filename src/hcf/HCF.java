@@ -1,13 +1,13 @@
-package mcm;
+package hcf;
 
 import java.util.Scanner;
 
-public class Mcd {
+public class HCF {
 	public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Ingrese el primer número");
+        System.out.println("First number");
         int num1 = scan.nextInt();
-        System.out.println("Ingrese el segundo número");
+        System.out.println("Second number");
         int num2 = scan.nextInt();
          
         int a = Math.max(num1, num2);
@@ -19,6 +19,6 @@ public class Mcd {
             b = a%b;
             a = res;
         } while (b!=0);
-        System.out.println("El M.C.D entre "+num1+" y "+num2+" es: " + res);        
+        System.out.println("HCF between "+num1+" and "+num2+" is: " + res);        
     }
 }
